@@ -5,11 +5,11 @@ Projeto acadêmico de frontend sobre a ODS 12 (Consumo e produção responsávei
 ## Páginas
 
 - `index.html`: início com mapa e prévia das iniciativas.
-- `servicos.html`: diretório com busca, filtro por causa, contatos demonstrativos e mapa.
+- `servicos.html`: diretório estático com contatos demonstrativos e mapa.
 - `sobre.html`: apresentação do projeto e da ODS 12.
 - `cadastro.html`: formulário com validação no navegador.
 
-Os nomes, endereços, telefones e e-mails do mapa são fictícios e servem apenas para demonstração. O formulário não envia nem armazena dados. Bootstrap, Leaflet, ícones, fontes e mapas precisam de conexão com a internet.
+Os nomes, endereços, telefones e e-mails do mapa são fictícios e servem apenas para demonstração. O formulário valida os campos no navegador, mas não envia nem armazena dados. Bootstrap, Leaflet, ícones, fontes e mapas precisam de conexão com a internet.
 
 ## Como executar
 

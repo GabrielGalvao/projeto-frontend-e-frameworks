@@ -25,19 +25,15 @@
     <div class="page-heading"><div><div class="eyebrow"><span class="eyebrow-dot"></span> REDE LOCAL · SÃO PAULO</div><h1>Encontre uma iniciativa<br><em>perto de você.</em></h1></div><p>Conheça projetos demonstrativos que representam diferentes formas de apoiar o consumo responsável no seu bairro.</p></div>
     <div class="demo-banner"><i class="bi bi-info-circle"></i><span>Projeto acadêmico: organizações, endereços e contatos exibidos são fictícios e servem apenas para demonstração.</span></div>
     <div class="directory-layout">
-      <section class="directory-panel" aria-label="Diretório de iniciativas">
-        <div class="directory-tools">
-          <label class="search-box"><i class="bi bi-search"></i><span class="visually-hidden">Buscar iniciativa</span><input id="orgSearch" type="search" placeholder="Buscar por nome ou bairro"></label>
-          <label class="visually-hidden" for="categoryFilter">Filtrar por categoria</label>
-          <select id="categoryFilter" class="form-select category-select"><option value="all">Todas as causas</option><option value="reuso">Reuso e doação</option><option value="alimento">Alimentação</option><option value="reciclagem">Reciclagem</option><option value="educacao">Educação</option></select>
-          <button id="locateButton" class="btn btn-location" type="button" title="Centralizar mapa na minha localização"><i class="bi bi-crosshair2"></i><span>Minha localização</span></button>
-        </div>
-        <p id="resultsCount" class="results-count" aria-live="polite"></p>
-        <div id="orgList" class="org-list" aria-live="polite"></div>
+      <section class="directory-panel org-list" aria-label="Diretório de iniciativas">
+        <article class="org-card"><span class="org-icon"><i class="bi bi-box2-heart"></i></span><div class="org-card-content"><span class="org-category">Reuso e doação</span><h3>Ponto de Reuso Vila Madalena</h3><div class="org-location"><i class="bi bi-geo-alt"></i> Rua Harmonia, 210 · Vila Madalena</div><p class="org-description">Coleta e redistribuição de roupas, livros e objetos em bom estado.</p><div class="org-contact"><a href="mailto:contato@exemplo.org"><i class="bi bi-envelope"></i> contato@exemplo.org</a><a href="tel:+551140001201"><i class="bi bi-telephone"></i> (11) 4000-1201</a></div></div></article>
+        <article class="org-card"><span class="org-icon"><i class="bi bi-basket2-heart"></i></span><div class="org-card-content"><span class="org-category">Alimentação</span><h3>Cozinha Circular Pinheiros</h3><div class="org-location"><i class="bi bi-geo-alt"></i> Rua dos Pinheiros, 480 · Pinheiros</div><p class="org-description">Aproveitamento integral de alimentos e refeições comunitárias.</p><div class="org-contact"><a href="mailto:cozinha@exemplo.org"><i class="bi bi-envelope"></i> cozinha@exemplo.org</a><a href="tel:+551140001202"><i class="bi bi-telephone"></i> (11) 4000-1202</a></div></div></article>
+        <article class="org-card"><span class="org-icon"><i class="bi bi-recycle"></i></span><div class="org-card-content"><span class="org-category">Reciclagem</span><h3>Coletivo Circular Paulista</h3><div class="org-location"><i class="bi bi-geo-alt"></i> Rua Treze de Maio, 95 · Bela Vista</div><p class="org-description">Orientação sobre separação de resíduos e coleta seletiva local.</p><div class="org-contact"><a href="mailto:circular@exemplo.org"><i class="bi bi-envelope"></i> circular@exemplo.org</a><a href="tel:+551140001203"><i class="bi bi-telephone"></i> (11) 4000-1203</a></div></div></article>
+        <article class="org-card"><span class="org-icon"><i class="bi bi-tools"></i></span><div class="org-card-content"><span class="org-category">Educação ambiental</span><h3>Oficina Recomeço Centro</h3><div class="org-location"><i class="bi bi-geo-alt"></i> Rua Aurora, 320 · República</div><p class="org-description">Oficinas comunitárias de reparo, reaproveitamento e educação ambiental.</p><div class="org-contact"><a href="mailto:oficina@exemplo.org"><i class="bi bi-envelope"></i> oficina@exemplo.org</a><a href="tel:+551140001204"><i class="bi bi-telephone"></i> (11) 4000-1204</a></div></div></article>
       </section>
       <section class="directory-map-wrap" aria-label="Mapa das iniciativas">
         <div class="directory-map-head"><div><span class="live-dot"></span> MAPA DE INICIATIVAS</div><span>São Paulo, SP</span></div>
-        <div id="directoryMap" class="directory-map" role="application" aria-label="Mapa interativo com iniciativas demonstrativas"></div>
+        <div id="directoryMap" class="directory-map initiative-map" role="application" aria-label="Mapa interativo com iniciativas demonstrativas"></div>
         <p class="map-disclaimer"><i class="bi bi-info-circle"></i> Localizações aproximadas para fins acadêmicos.</p>
       </section>
     </div>

@@ -8,8 +8,8 @@ const initiatives = [
 document.querySelectorAll(".initiative-map").forEach((element) => {
   const map = L.map(element).setView([-23.5587, -46.6691], 12);
 
-  L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+  L.tileLayer("https://tile.openstreetmap.de/{z}/{x}/{y}.png", {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
   }).addTo(map);
 
   initiatives.forEach(([name, neighborhood, email, coordinates]) => {
